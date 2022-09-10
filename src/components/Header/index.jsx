@@ -8,15 +8,18 @@ export function Header() {
             
             <Logo>
                 <div>
-                    <h1>RocketMovies</h1>
+                    <a href="/">
+                        <h1>RocketMovies</h1>
+                    </a>
                 </div>
             </Logo>
+
 
             <Search>
                 <Input placeholder="Pesquisar pelo título" icon={FiSearch} />
             </Search>
 
-            <Profile>
+            <Profile to="/profile">
                 <div>
                     <strong>André Viapiana</strong>
                     <span>sair</span>

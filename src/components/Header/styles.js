@@ -1,4 +1,5 @@
 import styled from "styled-components";
+import { Link } from "react-router-dom";
 
 export const Container = styled.header`
     grid-area: header;
@@ -16,7 +17,7 @@ export const Container = styled.header`
     padding: 0 123px;
 `;
 
-export const Profile = styled.div`
+export const Profile = styled(Link)`
     display: flex;
     align-items: center;
     text-align: end;
@@ -53,9 +54,13 @@ export const Logo = styled.div`
     display: flex;
     align-items: center;
     margin-right: 64px;
-    color: ${({ theme }) => theme.COLORS.BLUE};
-
+    
+    a {
+        text-decoration: none;
+    }
+    
     h1 {
+        color: ${({ theme }) => theme.COLORS.BLUE};
         font-size: 24px;
     }
 `;

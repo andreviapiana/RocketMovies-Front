@@ -8,6 +8,7 @@ import { Input } from "../../components/Input";
 import { Textarea } from "../../components/Textarea";
 import { Button } from "../../components/Button";
 import { NoteItem } from "../../components/NoteItem";
+import { Link } from "react-router-dom";
 
 export function New() {
   
@@ -18,7 +19,10 @@ export function New() {
       <main>
         <Form>
           <header>
-            <ButtonText title="Voltar" icon={RiArrowLeftLine}/>
+            <Link to="/">
+              <ButtonText title="Voltar" icon={RiArrowLeftLine}/>
+            </Link>
+
             <h1>Novo filme</h1>
           </header>
 

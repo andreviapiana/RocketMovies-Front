@@ -32,10 +32,12 @@ export const Form = styled.form`
         color: ${({ theme }) => theme.COLORS.GRAY_100};
     }
 
-    > a {
+    > .button {
         margin-top: 42px;
         color: ${({ theme }) => theme.COLORS.BLUE};
-        text-align: center;
+
+        display: flex;
+        justify-content: center;
     }
 `;
 
